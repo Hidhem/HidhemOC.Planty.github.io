@@ -11,3 +11,41 @@ License URL: https://www.gnu.org/licenses/gpl.html
 Tags: Boisson, Energisant, plante, vitrine, e-commerce
 Text Domain: blankslate
 */
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Modification du Header */
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    padding: 20px 40px;
+}
+
+.navbar-nav{
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar-nav ul{
+    color: black;
+}
+
+.navbar-nav li{
+    padding: 20px 40px;
+}
+
+.navbar-nav li:last-child{
+    color: white;
+    background-color: red;
+}
