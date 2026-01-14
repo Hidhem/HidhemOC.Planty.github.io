@@ -13,7 +13,23 @@ Text Domain: blankslate
 */
 
 *{
+    font-family: 'Syne', sans-serif;
     margin: 0;
+}
+
+h1{
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+h2{
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
 }
 
 /* Modification du Header */
@@ -34,12 +50,26 @@ Text Domain: blankslate
 .header__navbar-nav li a{
     display: flex;
     text-decoration: none;
+    font-family: 'Syne', sans-serif;
     color: black;
     padding: 20px;
-
 }
 
 .header__navbar-nav li:last-child a{
     color: white;
+    font-weight: 700;
     background-color: #DC9F96;
+}
+
+.header__navbar-nav li:last-child a:hover{
+    background-color: #C02E44;
+}
+
+/* Modification du Footer */
+
+.footer__navbar-nav a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
 }
