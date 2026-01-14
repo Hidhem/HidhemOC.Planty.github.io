@@ -8,14 +8,14 @@
 <body <?php body_class(); ?>>
 
     <header class="header__nav">
-        <a href="<?php echo home_url('/'); ?>" class="nav-logo">
+        <a href="<?php echo home_url('/'); ?>" class="header__nav-logo">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="Logo">
         </a>
 
         <?php wp_nav_menu([
             'theme_location' => 'header', 
             'container' => false,
-            'menu_class' => 'navbar-nav',
+            'menu_class' => 'header__navbar-nav',
             ]) 
         ?>
     </header>
