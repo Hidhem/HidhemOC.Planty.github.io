@@ -94,3 +94,85 @@ body{
     color: black;
     text-decoration: none;
 }
+
+
+/* PAGE CONTACT */
+
+/* nous rencontrer */
+
+.contact__top{
+    display: flex;
+    background: #ECE2DA;
+    border-radius: 50% / 0 0 20% 20% !important;
+}
+
+.contact__txt{
+    display: flex;
+    max-width: 669px;
+    margin-top: 100px !important;
+    margin-bottom: 40px !important;
+}
+
+.contact__top img{
+    width: 145.3px;
+    height: 150.26px;
+}
+
+.contact__top h2{
+    display: flex;
+    justify-content: center;
+    color: #D2776A !important;
+    font-weight: 800 !important;
+    font-size: x-large;
+}
+
+.contact__top p{
+    display: flex;
+    text-align: center;
+}
+
+.contact__form{
+    display: flex;
+    background: #ECE2DA;
+}
+
+/* l'équipe */ 
+
+.contact__team h2{
+    color: black !important;
+}
+
+
+/* PAGE COMMANDER */
+
+.command{
+    background-color: #3B8E46;
+}
+
+.command__form{
+    display: flex;
+    justify-content: center !important;
+}
+
+.command__number{
+    display: flex;
+}
+
+.number__card{
+    display: flex;
+}
+
+.card__picture{
+    max-width: 193px !important;
+}
+
+.card__number{
+    display: flex;
+}
+
+.horizontal__separator{
+    background-color: white;
+    width: 860px;
+    height: 1px;
+    margin: 20px 0;
+}
