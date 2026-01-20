@@ -8,7 +8,7 @@
 <body <?php body_class(); ?>>
 
     <header class="header__nav">
-        <a href="<?php echo home_url('/'); ?>" class="header__nav-logo">
+        <a href="<?php echo home_url('/accueil'); ?>" class="header__nav-logo">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="Logo">
         </a>
 

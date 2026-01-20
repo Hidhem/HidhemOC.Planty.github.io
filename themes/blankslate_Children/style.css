@@ -17,6 +17,14 @@ Text Domain: blankslate
     margin: 0;
 }
 
+#sidebar{
+    display: none;
+}
+
+.main__title{
+    color: #3B8E46;
+}
+
 h1{
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -32,15 +40,20 @@ body{
     font-weight: 400;
 }
 
+/* PAGE D'ACCUEIL */
+
 /* Modification du Header */
 
 .header__nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: space-between;
+    height: 80px;
 }
 
 .header__nav-logo{
-    padding: 20px;
+    padding: 30px;
 }
 
 .header__navbar-nav{
@@ -49,16 +62,24 @@ body{
 
 .header__navbar-nav li a{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-family: 'Syne', sans-serif;
     color: black;
-    padding: 20px;
+    width: 160px;
+    height: 80px;
 }
 
 .header__navbar-nav li:last-child a{
     color: white;
     font-weight: 700;
     background-color: #DC9F96;
+    width: 236px;
+}
+
+.header__navbar-nav li a:hover{
+    font-weight: 600;
 }
 
 .header__navbar-nav li:last-child a:hover{
