@@ -21,18 +21,13 @@ Text Domain: blankslate
     display: none;
 }
 
-.main__title{
-    color: #3B8E46;
-}
-
 h1{
     font-family: 'Syne', sans-serif;
-    font-weight: 800;
 }
 
 h2{
     font-family: 'Syne', sans-serif;
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 body{
@@ -86,93 +81,315 @@ body{
     background-color: #C02E44;
 }
 
+/* Modification du héro */
+
+
+.main h1{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    font-weight: 800 !important;
+    font-size: x-large;
+    color: #3B8E46;
+}
+
+.fruit img{
+    position: relative;
+    width: 393px;
+    height: 262px;
+}
+
+.main__fruits h2{
+    display: flex;
+    background-color: red;
+    position: absolute;
+    width: 393px;
+    height: 262px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800 !important;
+    font-size: x-large;
+}
+
+
+
 /* Modification du Footer */
 
 .footer__navbar-nav a{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 60px;
     color: black;
     text-decoration: none;
 }
 
 
-/* PAGE CONTACT */
+/* PAGE NOUS RENCONTRER */
 
-/* nous rencontrer */
+/* top banner */
 
 .contact__top{
-    display: flex;
-    background: #ECE2DA;
+    position: relative;
+    padding: 80px 0 40px 0 !important;
+    background-color: #ECE2DA;
     border-radius: 50% / 0 0 20% 20% !important;
 }
 
-.contact__txt{
-    display: flex;
-    max-width: 669px;
-    margin-top: 100px !important;
-    margin-bottom: 40px !important;
-}
-
-.contact__top img{
-    width: 145.3px;
-    height: 150.26px;
+.contact__top-txt{
+    max-width: 680px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .contact__top h2{
-    display: flex;
-    justify-content: center;
-    color: #D2776A !important;
+    color: #D2776A;
     font-weight: 800 !important;
     font-size: x-large;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .contact__top p{
-    display: flex;
     text-align: center;
 }
 
-.contact__form{
-    display: flex;
-    background: #ECE2DA;
+.contact__top img{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    width: 145px;
+    height: 150px;
 }
 
-/* l'équipe */ 
+
+/* teams */
+
+.contact__team{
+    display: flex;
+    position: relative;
+    margin: 40px 0 !important;
+}
 
 .contact__team h2{
-    color: black !important;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.team__cards{
+    display: flex;
+    flex-direction: row !important;
+}
+
+.team__card img{
+    width: 167px !important;
+}
+
+.team__card h2{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.team__card p{
+    text-align: center;
+}
+
+.team__card-leave{
+    background-color: red;
+    z-index: 5;
+    position: absolute;
+}
+
+
+/* Modification du formulaire de contact */
+
+.contact__name h2{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    font-size: x-large;
+    color: black;
+}
+
+.contact__form{
+    background-color: #ECE2DA;
+}
+
+.contact__name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__name input, textarea{
+    display: flex;
+    width: 383px;
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+
+.contact__name textarea{
+    z-index: 2;
+    position: relative;
+    width: 383px;
+    height: 237px;
+}
+
+.contact__form__picture{
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}
+
+/* répétition des cannettes dans le footer */
+
+.footer__repeat{
+    display: flex;
+}
+
+.repeat__can-1{
+    background-color: red;
+    padding-bottom: -350px;
+    mask-repeat: repeat-x;
 }
 
 
 /* PAGE COMMANDER */
 
+.command__form h2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-weight: 800 !important;
+    font-size: x-large;
+}
+
+.command__form h3{
+    display: flex;
+    font-weight: 700 !important;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
 .command{
     background-color: #3B8E46;
 }
 
+.command__top{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.command__cards{
+    display: flex;
+}
+
 .command__form{
     display: flex;
-    justify-content: center !important;
+    margin-inline: auto !important;
+    width: 860px !important;
+    color: white;
 }
 
-.command__number{
-    display: flex;
-}
-
-.number__card{
-    display: flex;
+.command__card{
+    width: fit-content;
+    margin: auto;
 }
 
 .card__picture{
-    max-width: 193px !important;
+    position: relative;
+    z-index: 1;
+    max-width: 192px !important;
+}
+
+.picture__title{
+    position: absolute;
+    top: 10%;
+    z-index: 2;
+    width: 192px;
+    height: 128px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card__number{
+    margin-inline: auto;
+    margin-top: 10px;
     display: flex;
+    text-align: center;
+    width: 39px;
+    height: 56px;
 }
+
 
 .horizontal__separator{
     background-color: white;
     width: 860px;
     height: 1px;
-    margin: 20px 0;
 }
+
+.vertical__separator{
+    background-color: white;
+    width: 1px;
+    height: 420px;
+}
+
+.command__bottom{
+    display: flex;
+    justify-content: space-between;
+    max-height: 447px;
+    margin-top: 40px;
+}
+
+.command__name input{
+    display: flex;
+    width: 383px;
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    margin: 10px 0 20px 0;
+}
+
+.command__adress input{
+    display: flex;
+    width: 383px;
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    margin: 10px 0 20px 0;
+}
+
+.command__send{
+    display: flex;
+    justify-content: center;
+}
+
+.send__button{
+    display: flex;
+    justify-content: center;
+    width: 198px;
+    height: 55px;
+    border: none;
+    border-radius: 5px !important;
+    color: white;
+    background-color: #E0B9B4;
+    margin: auto;
+}
+
+.send__button:hover{
+    cursor: pointer;
+    background-color: #C02E44;
+}
+
+/* MEDIA QUERRIES */
+
+@media (max-width: 600px) {}
